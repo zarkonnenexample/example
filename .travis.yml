@@ -1,0 +1,9 @@
+language: node_js
+before_script:
+    - "npm install -g se-interpreter"
+script:
+    - "se-interpreter --listener=./utils/sauce_listener.js my_interpreter_config.json"
+env:
+    global:
+        - SAUCE_USERNAME=zarkonnenexample
+        - secure: "U+ww0cHNyF0LCItD+KhvuK+oZ63t4QINlsZ0st3onjpjXkRDB6ysKvPYpEogKNaGZdMeCtntmMCSBTpQoG5KnLzCvIJnsvCksUm/xoXFFly2jYi249rfXLvDaDqW9SLzEU/JMQdNpKjLHSY0i6WMhoKS9Mskg7qt+47pSpKQUMo="
